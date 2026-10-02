@@ -1,0 +1,57 @@
+{% load static %}<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Noticias{% endblock %}</title>
+  <meta name="description" content="Portal de noticias de Tecnología, Ciencia y Cultura.">
+  <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{% url 'news:home' %}">
+        <span class="brand-mark">PN</span>
+        <span class="brand-name">Portal de Noticias</span>
+      </a>
+      <nav class="main-nav" aria-label="Categorías">
+        {% for cat in categories %}
+          <a href="{% url 'news:category_list' cat.slug %}">{{ cat.name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+
+    <aside class="sidebar">
+      {% block sidebar %}
+        <h2 class="sidebar-title">Categorías</h2>
+        <ul class="category-list">
+          {% for cat in categories %}
+            <li>
+              <a href="{% url 'news:category_list' cat.slug %}">
+                {{ cat.name }}
+              </a>
+            </li>
+          {% empty %}
+            <li class="muted">Sin categorías registradas.</li>
+          {% endfor %}
+        </ul>
+      {% endblock %}
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; {% now "Y" %} Portal de Noticias — Tecsup.
+        Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

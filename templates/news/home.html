@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Portada — Portal de Noticias{% endblock %}
+
+{% block content %}
+  <h1 class="page-title">Últimas noticias</h1>
+
+  <div class="grid">
+    {% for article in articles %}
+      {% include 'partials/_article_card.html' %}
+    {% empty %}
+      <p class="empty-state">No hay noticias publicadas todavía.</p>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  <h2 class="sidebar-title">Categorías</h2>
+  <ul class="category-list">
+    {% for cat in categories %}
+      <li>
+        <a href="{% url 'news:category_list' cat.slug %}">
+          {{ cat.name }}
+          <span class="count">{{ cat.articles.count }}</span>
+        </a>
+      </li>
+    {% empty %}
+      <li class="muted">Sin categorías registradas.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

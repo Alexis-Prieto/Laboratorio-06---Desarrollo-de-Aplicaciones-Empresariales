@@ -1,0 +1,36 @@
+{% comment %}
+Reusable article card. It expects an `article` object in the context and does
+not include <html>, <head> or <body>, so it can be included from any template.
+{% endcomment %}
+<article class="card">
+  {% if article.featured_image %}
+    <img class="card-image" src="{{ article.featured_image.url }}" alt="{{ article.title }}">
+  {% else %}
+    <div class="card-image card-image--placeholder">
+      <span>{{ article.title|truncatechars:45 }}</span>
+    </div>
+  {% endif %}
+
+  <div class="card-body">
+    <p class="card-meta">
+      <span class="card-date">{{ article.published_at|date:"d M Y" }}</span>
+      <span class="card-author">{{ article.author.name }}</span>
+    </p>
+
+    <h2 class="card-title">
+      <a href="{% url 'news:article_detail' article.slug %}">{{ article.title }}</a>
+    </h2>
+
+    <p class="card-summary">{{ article.summary|truncatewords:20 }}</p>
+
+    {% if article.categories.all %}
+      <ul class="card-tags">
+        {% for cat in article.categories.all %}
+          <li>
+            <a href="{% url 'news:category_list' cat.slug %}">{{ cat.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</article>
