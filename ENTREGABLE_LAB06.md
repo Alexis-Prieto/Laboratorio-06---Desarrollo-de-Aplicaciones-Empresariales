@@ -1319,58 +1319,155 @@ Las pruebas de escapado son la comprobación automática del Paso 12:
 
 ## Anexo — Capturas del sistema en funcionamiento
 
-> Sustituir cada marcador por la captura correspondiente antes de la entrega
-> final. Las imágenes deben guardarse, por ejemplo, en una carpeta `capturas/`
-> del repositorio.
-
 ### 1. Estructura del proyecto en VS Code
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="532" height="846" alt="image" src="https://github.com/user-attachments/assets/a2d76cfa-1a47-4e76-bbc5-3c689a284fcf" />
 
-*Captura esperada:* el explorador de VS Code con las carpetas `config/`,
-`movies/`, `news/`, `templates/` (con `base.html`, `partials/` y `news/`),
-`static/news/css/` y `media/articles/`.
+<img width="577" height="631" alt="image" src="https://github.com/user-attachments/assets/a6132aa1-f88c-448a-804b-ecef65e3c451" />
 
-### 2. Portada del portal
+<img width="556" height="781" alt="image" src="https://github.com/user-attachments/assets/ca65db55-7fbc-4542-a5c4-79c709c17f7e" />
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="581" height="797" alt="image" src="https://github.com/user-attachments/assets/efc7147f-a0e5-46a1-8599-9cb1b717d6e2" />
 
-*Captura esperada:* `http://127.0.0.1:8000/` con el header en degradado índigo,
-las 3 categorías en la navegación, las 6 tarjetas de noticias en rejilla y la
-barra lateral con los contadores por categoría.
+### Capturas de la pagina
 
-### 3. Detalle de un artículo
+<img width="1207" height="706" alt="image" src="https://github.com/user-attachments/assets/a07288b2-244e-4281-ba82-18f838984809" />
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="1210" height="616" alt="image" src="https://github.com/user-attachments/assets/82719ffd-a6a8-43a2-a4a7-647762d622c3" />
 
-*Captura esperada:* `http://127.0.0.1:8000/article/nuevo-estudio-sobre-el-agua-en-marte/`
-con el título, la línea «Por Luis Ramírez — … de … de 2026», el resumen
-destacado, los párrafos del cuerpo y el pie con las categorías.
+<img width="1242" height="622" alt="image" src="https://github.com/user-attachments/assets/2fce1b31-9ac9-4874-be2f-a21a4218a52b" />
 
-### 4. Listado por categoría
+<img width="1257" height="632" alt="image" src="https://github.com/user-attachments/assets/a433e443-ab06-44d3-acdb-1aab14042358" />
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="1227" height="622" alt="image" src="https://github.com/user-attachments/assets/db68f679-cf87-4ac6-96b2-a14ea890a63e" />
 
-*Captura esperada:* `http://127.0.0.1:8000/category/tecnologia/` mostrando el
-título «Categoría: Tecnología», su descripción y las 2 noticias de la categoría
-usando la misma tarjeta reutilizable.
+<img width="1251" height="631" alt="image" src="https://github.com/user-attachments/assets/722171eb-e6f7-4c58-9099-7fb7631c0812" />
 
-### 5. Admin de las tres entidades
+<img width="1237" height="702" alt="image" src="https://github.com/user-attachments/assets/22f6d0d0-d035-4729-bc36-78487b7a86ae" />
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="1267" height="727" alt="image" src="https://github.com/user-attachments/assets/2a6e1455-eb71-42d9-8dd7-e7fa1d440c55" />
 
-*Captura esperada:* `/admin/` con las secciones **Authors**, **Categories** y
-**Articles**; incluir además una captura del listado de artículos con sus
-columnas (`title`, `author`, `published_at`, `is_published`, `# Categories`),
-los filtros laterales y la barra de búsqueda.
+<img width="1242" height="622" alt="image" src="https://github.com/user-attachments/assets/1c284499-6af7-4928-86b5-adaee91a6d5e" />
 
-### 6. Demostración del escapado automático
+<img width="1222" height="455" alt="image" src="https://github.com/user-attachments/assets/c94aa7d9-a789-48b6-9053-47cb88efcdfb" />
 
-`[PEGAR CAPTURA AQUÍ]`
+<img width="1132" height="491" alt="image" src="https://github.com/user-attachments/assets/226b1574-29ae-4504-8fae-1355b2f9d759" />
 
-*Captura esperada:* el detalle de
-`/article/cinco-habitos-para-proteger-tus-datos-personales/` donde se ven las
-etiquetas `<p>` y `<strong>` escritas como texto, sin que el navegador las
-interprete. Adjuntar opcionalmente una segunda captura con el resultado de
-`{% autoescape off %}` para comparar (en esa, «párrafo importante» aparece en
-negrita).
+<img width="1432" height="522" alt="image" src="https://github.com/user-attachments/assets/9e02dc0d-964a-4854-9a39-bfa7df2a10b3" />
+
+<img width="1242" height="510" alt="image" src="https://github.com/user-attachments/assets/d3c07732-85a7-4dbb-8560-12cca5d0adfa" />
+
+<img width="1232" height="497" alt="image" src="https://github.com/user-attachments/assets/31d99445-e067-4c84-9da1-936b0a999157" />
+
+<img width="1222" height="580" alt="image" src="https://github.com/user-attachments/assets/d566ea15-16f7-4bf9-937e-735a225f252e" />
+
+<img width="1282" height="607" alt="image" src="https://github.com/user-attachments/assets/a8e4f8e0-075a-415b-a51e-bb45207b1882" />
+
+<img width="1211" height="531" alt="image" src="https://github.com/user-attachments/assets/e3db1255-e73c-4e6b-9cfc-7bb2a0649038" />
+
+<img width="1212" height="457" alt="image" src="https://github.com/user-attachments/assets/e045a8e6-7b08-41be-882c-058c5e476637" />
+
+<img width="1212" height="526" alt="image" src="https://github.com/user-attachments/assets/0757e6c8-dd1d-4d07-88d5-3e6efbf1ebbd" />
+
+<img width="1256" height="502" alt="image" src="https://github.com/user-attachments/assets/57d3df2b-0561-418c-a0cb-ee27d9e41734" />
+
+<img width="1196" height="787" alt="image" src="https://github.com/user-attachments/assets/9f1aa45f-774a-4071-820a-a82bdc45afff" />
+
+<img width="1147" height="771" alt="image" src="https://github.com/user-attachments/assets/df2e6f74-7a6e-4305-9e7d-e9bcf42463af" />
+
+<img width="1155" height="672" alt="image" src="https://github.com/user-attachments/assets/74b75d94-c52b-412c-a39b-158fbb9895dd" />
+
+<img width="1215" height="621" alt="image" src="https://github.com/user-attachments/assets/80586d4e-843a-4d4c-8e2a-d9f45ff10456" />
+
+<img width="1217" height="547" alt="image" src="https://github.com/user-attachments/assets/eedd577c-bcb3-4eee-b00f-32dea560efc8" />
+
+<img width="1162" height="502" alt="image" src="https://github.com/user-attachments/assets/b31935f4-cbb8-40db-b879-f1e296452b47" />
+
+<img width="1117" height="440" alt="image" src="https://github.com/user-attachments/assets/376ce735-8d50-40d4-86a1-d17ad79ca5bd" />
+
+<img width="1002" height="552" alt="image" src="https://github.com/user-attachments/assets/550c78e2-dab9-4002-bc95-5d4740c6f5f3" />
+
+<img width="1216" height="455" alt="image" src="https://github.com/user-attachments/assets/f7a90f42-8775-4489-a7c8-fb3431bef861" />
+
+<img width="1212" height="657" alt="image" src="https://github.com/user-attachments/assets/69a1ef14-d71c-40a4-b1fd-b581664593fe" />
+
+<img width="1142" height="511" alt="image" src="https://github.com/user-attachments/assets/b323aa94-f51a-425a-9b03-d4d1e95233da" />
+
+<img width="1242" height="481" alt="image" src="https://github.com/user-attachments/assets/9e0313e9-c32c-4871-9260-3a96d6398833" />
+
+<img width="1297" height="611" alt="image" src="https://github.com/user-attachments/assets/862770d7-d1ce-4add-9645-72f00f5452bf" />
+
+<img width="1217" height="712" alt="image" src="https://github.com/user-attachments/assets/7052f9cb-bb3d-40ef-a0be-a6b59090b756" />
+
+<img width="1187" height="627" alt="image" src="https://github.com/user-attachments/assets/1f47cdf7-f5c3-4418-86cb-586e99c3e169" />
+
+<img width="961" height="515" alt="image" src="https://github.com/user-attachments/assets/41764eb4-c394-44ba-98c3-749330e73469" />
+
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/25928b0c-8d8a-467c-a366-cb7c9db38651" />
+
+<img width="1172" height="582" alt="image" src="https://github.com/user-attachments/assets/8bce3f71-b8be-41ba-86c3-6ad59a0305dc" />
+
+<img width="1057" height="580" alt="image" src="https://github.com/user-attachments/assets/f49cb4d8-9d63-4357-a931-e4e2ecc760ab" />
+
+<img width="1140" height="536" alt="image" src="https://github.com/user-attachments/assets/3794cdd6-bf65-44f3-a42d-1e28def8707b" />
+
+<img width="1212" height="592" alt="image" src="https://github.com/user-attachments/assets/e1147da0-5a0c-4cb1-bdf0-56ce8eba7a95" />
+
+<img width="1195" height="667" alt="image" src="https://github.com/user-attachments/assets/672f4fa2-38bf-423f-9376-9f7e3ee60404" />
+
+<img width="1041" height="320" alt="image" src="https://github.com/user-attachments/assets/878d922c-bdc5-4316-ba25-91212c284505" />
+
+<img width="837" height="420" alt="image" src="https://github.com/user-attachments/assets/1370e690-98fa-4b9b-873f-b36edc09d860" />
+
+<img width="1142" height="667" alt="image" src="https://github.com/user-attachments/assets/78bf95f9-3d8c-4476-b7b6-3876cb8bb87b" />
+
+<img width="1202" height="701" alt="image" src="https://github.com/user-attachments/assets/f9dec56f-86f6-43b0-8a1a-a8415386a4c5" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
